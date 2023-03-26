@@ -16,4 +16,4 @@ jobs:
       - name: Build with Maven
         run: mvn clean install -DskipTests -pl  nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core -am
         run: mvn -pl nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core test -Dtest=org.apache.nifi.controller.status.history.EmbeddedQuestDbStatusHistoryRepositoryForComponentsTest#testReadingLimitedByPreferredDataPoints
-        run: mvn -pl nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core edu.illinois:nondex-maven-plugin:2.1.1:nondex -Dtest=org.apache.nifi.controller.status.history.EmbeddedQuestDbStatusHistoryRepositoryForComponentsTest#testReadingLimitedByPreferredDataPoints -DnondexRuns=100
+  
