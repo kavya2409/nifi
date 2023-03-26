@@ -14,6 +14,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build with Maven
-        run: mvn clean install -DskipTests -pl  nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core -am
         run: mvn -pl nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core test -Dtest=org.apache.nifi.controller.status.history.EmbeddedQuestDbStatusHistoryRepositoryForComponentsTest#testReadingLimitedByPreferredDataPoints
   
